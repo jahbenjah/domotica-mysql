@@ -1,0 +1,79 @@
+﻿@model DataPaginador<InputModelRegistrar>
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var list = Model.List;
+}
+
+<div class="container-fluid">
+    <section class="Usuarios">
+        <div class="row">
+            <div class="col-12">
+                <h1> Usuarios </h1>
+                <img src="" alt="Usuarios" />
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <table class="tabla">
+                        <thead>
+                            <tr>
+                                <th>@Html.DisplayNameFor(model => model.Input.Imagen)</th>
+                                <th>@Html.DisplayNameFor(model => model.Input.Email)</th>
+                                <th>@Html.DisplayNameFor(model => model.Input.Nombre)</th>
+                                <th>@Html.DisplayNameFor(model => model.Input.Apellido)</th>
+                                <th>@Html.DisplayNameFor(model => model.Input.DNI)</th>
+                                <th>@Html.DisplayNameFor(model => model.Input.PhoneNumber)</th>
+                                <th>@Html.DisplayNameFor(model => model.Input.Role)</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in list)
+                            {
+                                //var imagen = 
+                            <tr>
+                                <td>
+                                    <ul>
+                                        <li class="">
+                                            <!--<img class="img-fluid" src="~/images/fotos/" alt="" /> -->
+                                        </li>
+                                    </ul>
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Imagen)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Email)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Nombre)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Apellido)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.DNI)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.PhoneNumber)
+                                </td>
+                                <td>
+                                    @Html.DisplayFor(modelItem => item.Role)
+                                </td>
+                                
+                            </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            
+        </div>
+        <div class="col-12">
+
+        </div>
+    </section>
+</div>
+    
+
+
+

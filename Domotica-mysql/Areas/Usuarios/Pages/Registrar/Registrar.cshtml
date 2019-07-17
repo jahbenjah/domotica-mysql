@@ -1,0 +1,45 @@
+﻿@page
+@model Domotica_mysql.Areas.Usuarios.Pages.Registrar.RegistrarModel
+@{
+}
+
+    <div class="container-fluid">
+        <form method="post" enctype="multipart/form-data">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="text-center"> Registro de usuarios </h1>
+                </div>
+                <div class="col-12 col-sm-6">
+                    <img src="~/images/fotos/default.png" alt="" />
+                    <button type="button" class="btn-primary">Subir</button>
+                    <input asp-for="Input.AvatarImage" accept="image/*" type="file" id="files" />
+                </div>
+                <div class="col-12 col-sm-6">
+                    <input asp-for="Input.Nombre" placeholder="Nombre" id="nombre" />
+                    <label asp-for="Input.Nombre">Nombre</label>
+                    <span asp-validation-for="Input.Nombre" class="text-danger"></span>
+                </div>
+                <div class="col-12">
+                    <input asp-for="Input.Apellido" placeholder="Apellido" id="nombre" />
+                    <label asp-for="Input.Apellido">Nombre</label>
+                    <span asp-validation-for="Input.Apellido" class="text-danger"></span>
+                </div>
+                <div class="col-12">
+                    <input asp-for="Input.DNI" placeholder="DNI" id="nombre" />
+                    <label asp-for="Input.DNI">Nombre</label>
+                    <span asp-validation-for="Input.DNI" class="text-danger"></span>
+                </div>
+                <div class="col-12">
+                    <input asp-for="Input.Email" placeholder="Email" id="nombre" />
+                    <label asp-for="Input.Email">Nombre</label>
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6">
+                    @Html.DropDownList("Input.Role", new SelectList(Model.Input.rolesLista, "Text", "Text"), "Seleccione un role", null)
+                </div>
+            </div>
+        </form>
+    </div>
