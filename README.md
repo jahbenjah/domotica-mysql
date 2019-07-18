@@ -55,7 +55,12 @@ La página de usuarios da un problema que no sé resolver, algo que siempre pasa
 
 Realmente lo que quiero es arreglar el problema que he puesto en pastebin y no se que hacer porque estoy usando para la base de datos una estructura algo diferente de Identity y tengo sin más remedio que usar mis propios objetos.
 
-[UsuariosController.cs](https://pastebin.com/rcGagzeg)
+No sé como arreglarlo este problema la verdad porque tengo que seguir usando mis objetos para que funcione 
+la DB MySQL.
+
+[UsuariosController.cs](https://github.com/techcomputerworld/domotica-mysql/blob/master/Domotica-mysql/Areas/Usuarios/Controllers/UsuariosController.cs)
+
+[Pastebin fallo UsuariosController.cs](https://pastebin.com/rcGagzeg)
 
 [ASP.NET Core](https://techcomputerworld.com/asp-net-core-con-mysql-se-puede-conectar/) 
 
