@@ -28,13 +28,13 @@ Lo que no tengo muy claro como se usan por eso pongo esta documentación y de pa
 
 El problema se soluciona como he dejado estos archivos podréis verlos en: 
 
-[ApplicationDbContext](https://github.com/techcomputerworld/domotica-mysql/blob/test/Domotica-mysql/Data/ApplicationDbContext.cs)
+[ApplicationDbContext](https://github.com/techcomputerworld/domotica-mysql/blob/master/Domotica-mysql/Data/ApplicationDbContext.cs)
 
-[Startup.cs](https://github.com/techcomputerworld/domotica-mysql/blob/test/Domotica-mysql/Startup.cs)
+[Startup.cs](https://github.com/techcomputerworld/domotica-mysql/blob/master/Domotica-mysql/Startup.cs)
 
 Algo importante es las clases que tengo dentro de: 
 
-[AplicationUser.cs](https://github.com/techcomputerworld/domotica-mysql/blob/test/Domotica-mysql/Data/CustomIdentity/ApplicationUser.cs) 
+[AplicationUser.cs](https://github.com/techcomputerworld/domotica-mysql/blob/master/Domotica-mysql/Data/CustomIdentity/ApplicationUser.cs) 
 
 Esta clase son varias clases como podéis ver que las he puesto en el mismo fichero, esto no es una buena practica de 
 programación pero lo he hecho así porque hacen lo mismo modificar Identity propiamente dicho a nuestras necesidades.
@@ -51,7 +51,12 @@ Ya funciona la aplicación con MySQL como base de datos en el proyecto.
 
 ### problemas no resueltos
 
-La página de usuarios da un problema que no sé resolver, algo que siempre pasa en el desarrollo de software y la poca experiencia que tengo con 
+La página de usuarios da un problema que no sé resolver, algo que siempre pasa en el desarrollo de software y la poca experiencia que tengo con este Framework ASP.NET Core 2.2.
+
+Realmente lo que quiero es arreglar el problema que he puesto en pastebin y no se que hacer porque estoy usando para la base de datos una estructura algo diferente de Identity y tengo sin más remedio que usar mis propios objetos.
+
+[UsuariosController.cs](https://pastebin.com/rcGagzeg)
+
 [ASP.NET Core](https://techcomputerworld.com/asp-net-core-con-mysql-se-puede-conectar/) 
 
 ### Poner en marcha este proyecto
